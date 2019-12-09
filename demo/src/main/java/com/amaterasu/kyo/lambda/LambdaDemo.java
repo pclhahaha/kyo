@@ -1,9 +1,5 @@
 package com.amaterasu.kyo.lambda;
 
-import com.sun.tools.javac.util.List;
-
-import java.util.Collections;
-
 public class LambdaDemo {
 
     private void streamWithLambda() {

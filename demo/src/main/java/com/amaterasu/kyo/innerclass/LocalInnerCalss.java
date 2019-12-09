@@ -1,7 +1,5 @@
 package com.amaterasu.kyo.innerclass;
 
-import sun.security.krb5.internal.crypto.Des;
-
 public class LocalInnerCalss {
     interface Destionation {
         String getName();
