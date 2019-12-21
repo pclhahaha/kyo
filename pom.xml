@@ -19,6 +19,7 @@
         <module>springwebflux</module>
         <module>springreactor</module>
         <module>demo</module>
+        <module>springdemo</module>
     </modules>
     <packaging>pom</packaging>
 

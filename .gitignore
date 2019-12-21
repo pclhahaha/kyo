@@ -1,8 +1,12 @@
 # Project exclude paths
-/target/
-
+*.classpath
+*.project
+**/.settings
+.settings
 *.iml
-
-*.class
-
-target/
+**/.idea
+.idea
+**/target
+target
+.DS_Store
+logs
