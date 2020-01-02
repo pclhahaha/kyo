@@ -6,15 +6,26 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springdemo" />
-        <module name="springwebflux" />
+        <module name="basedemo" />
         <module name="demo" />
+      </profile>
+      <profile name="Annotation profile for springreactor" enabled="true">
+        <sourceOutputDir name="../../springreactor/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../springreactor/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
         <module name="springreactor" />
+      </profile>
+      <profile name="Annotation profile for kyo Maven Webapp" enabled="true">
+        <sourceOutputDir name="../../springwebflux/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../springwebflux/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springwebflux" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="basedemo" options="-parameters" />
       <module name="demo" options="-parameters" />
       <module name="kyo" options="-parameters" />
       <module name="springdemo" options="-parameters" />
