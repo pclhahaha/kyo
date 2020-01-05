@@ -1,4 +1,4 @@
-package com.amaterasu.kyo.forkjoin;
+package com.amaterasu.kyo.concurrent.forkjoin;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ForkJoinPool;
