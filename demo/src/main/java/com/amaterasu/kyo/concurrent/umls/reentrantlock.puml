@@ -1,0 +1,60 @@
+@startuml
+abstract class AbstractOwnableSynchronizer{
+Thread exclusiveOwnerThread
+}
+abstract class AbstractQueuedSynchronizer{
+int state
+Node head
+Node tail
+boolean tryAcquire(int arg)
+boolean tryRelease(int arg)
+int tryAcquireShared(int arg)
+boolean tryReleaseShared(int arg)
+boolean isHeldExclusively()
+}
+
+class Node{
+Node prev
+Node next
+int waitStatus
+Thread thread
+Node nextWaiter
+}
+interface Condition{
+void signal()
+void await()
+}
+class ConditionObject{
+Node firstWaiter
+Node lastWaiter
+void signal()
+void await()
+}
+Condition <|-- ConditionObject
+
+AbstractQueuedSynchronizer *-- Node
+AbstractQueuedSynchronizer *-- ConditionObject
+
+class ReentrantLock{
+private final Sync sync
+public void lock()
+public void unlock()
+}
+abstract class Sync{
+abstract void lock()
+}
+class NoFairSync{
+final void lock()
+}
+class FairSync{
+final void lock()
+}
+
+
+AbstractOwnableSynchronizer <|-- AbstractQueuedSynchronizer
+ReentrantLock *-- Sync
+AbstractQueuedSynchronizer <|--  Sync
+Sync <|-- NoFairSync
+Sync <|-- FairSync
+
+@enduml

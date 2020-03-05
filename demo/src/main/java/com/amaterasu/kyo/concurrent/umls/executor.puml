@@ -1,0 +1,23 @@
+@startuml
+interface Executor
+interface ExecutorService
+abstract class AbstractExecutorService
+class ThreadPoolExecutor{
+int corePoolSize
+int maximumPoolSize
+long keepAliveTime
+BlockingQueue<Runnable> workQueue
+ThreadFactory threadFactory
+RejectedExecutionHandler handler
+}
+interface ScheduledExecutorService
+class ScheduledThreadPoolExecutor
+
+Executor <|-- ExecutorService
+ExecutorService <|-- AbstractExecutorService
+AbstractExecutorService <|-- ThreadPoolExecutor
+ExecutorService <|-- ScheduledExecutorService
+ScheduledExecutorService <|-- ScheduledThreadPoolExecutor
+ThreadPoolExecutor <|-- ScheduledThreadPoolExecutor
+AbstractExecutorService <|-- ForkJoinPool
+@enduml

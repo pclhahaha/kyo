@@ -1,0 +1,28 @@
+@startuml
+interface Runnable
+interface Callable
+interface Future
+interface ScheduledFuture
+interface RunnableFuture
+class FutureTask
+interface RunnableScheduledFuture
+
+abstract class ForkJoinTask
+abstract class RecursiveTask
+abstract class RecursiveAction
+abstract class CountedCompleter
+
+Runnable <|-- RunnableFuture
+Future <|-- RunnableFuture
+RunnableFuture <|-- FutureTask
+Future <|-- ScheduledFuture
+Delayed <|-- ScheduledFuture
+
+ScheduledFuture <|-- RunnableScheduledFuture
+RunnableFuture <|-- RunnableScheduledFuture
+
+Future <|-- ForkJoinTask
+ForkJoinTask <|-- RecursiveTask
+ForkJoinTask <|-- RecursiveAction
+ForkJoinTask <|-- CountedCompleter
+@enduml

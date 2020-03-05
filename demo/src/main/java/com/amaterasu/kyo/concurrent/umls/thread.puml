@@ -1,0 +1,7 @@
+@startuml
+class Thread
+class ForkJoinWorkerThread
+
+Thread <|-- ForkJoinWorkerThread
+
+@enduml

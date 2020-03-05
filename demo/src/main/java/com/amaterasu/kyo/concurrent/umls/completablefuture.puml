@@ -1,0 +1,8 @@
+@startuml
+interface CompletionStage{
+CompletionStage thenApply(Function<? super T,? extends U> fn);
+CompletionStage thenApplyAsync(Function<? super T,? extends U> fn);
+}
+CompletionStage <|-- CompletableFuture
+Future <|-- CompletableFuture
+@enduml
