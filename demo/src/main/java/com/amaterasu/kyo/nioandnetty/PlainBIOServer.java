@@ -1,4 +1,4 @@
-package com.amaterasu.kyo.netty;
+package com.amaterasu.kyo.nioandnetty;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -7,7 +7,7 @@ import java.net.Socket;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import static com.amaterasu.kyo.netty.ServerConstant.BIO_PORT;
+import static com.amaterasu.kyo.nioandnetty.ServerConstant.BIO_PORT;
 
 public class PlainBIOServer {
 
@@ -16,7 +16,7 @@ public class PlainBIOServer {
         server.serve(BIO_PORT);
     }
 
-    public void serve(int port) throws IOException {
+    private void serve(int port) throws IOException {
 
         ExecutorService executorService = Executors.newFixedThreadPool(10);
 

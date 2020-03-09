@@ -1,4 +1,4 @@
-package com.amaterasu.kyo.netty;
+package com.amaterasu.kyo.nioandnetty;
 
 public class ServerConstant {
 

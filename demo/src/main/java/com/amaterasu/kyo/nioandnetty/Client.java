@@ -1,19 +1,19 @@
-package com.amaterasu.kyo.netty;
+package com.amaterasu.kyo.nioandnetty;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.Socket;
-import java.net.SocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
 
-import static com.amaterasu.kyo.netty.ServerConstant.BIO_PORT;
-import static com.amaterasu.kyo.netty.ServerConstant.NIO_PORT;
+import static com.amaterasu.kyo.nioandnetty.ServerConstant.BIO_PORT;
+import static com.amaterasu.kyo.nioandnetty.ServerConstant.NIO_PORT;
 
 public class Client {
 
     public static void main(String[] args) throws IOException {
         Client client = new Client();
+        client.connectBIO(BIO_PORT);
         client.connectNIO(NIO_PORT);
     }
 

@@ -19,8 +19,16 @@ public class CompletableFutureDemo {
 //        future.join();
     }
 
+    void testThenCompose() throws ExecutionException, InterruptedException {
+        CompletableFuture<Integer> future = CompletableFuture.supplyAsync(() -> {
+            return 100;
+        });
+        CompletableFuture<Integer> anotherFuture = future.thenCompose(r -> CompletableFuture.supplyAsync(() -> r * 100));
+        System.out.println(anotherFuture.get());
+    }
+
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         CompletableFutureDemo demo = new CompletableFutureDemo();
-        demo.testGetJoin();
+        demo.testThenCompose();
     }
 }

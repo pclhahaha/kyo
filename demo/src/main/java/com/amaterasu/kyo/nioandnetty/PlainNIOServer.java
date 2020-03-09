@@ -1,8 +1,7 @@
-package com.amaterasu.kyo.netty;
+package com.amaterasu.kyo.nioandnetty;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
-import java.net.ServerSocket;
 import java.nio.ByteBuffer;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
@@ -11,7 +10,7 @@ import java.nio.channels.SocketChannel;
 import java.util.Iterator;
 import java.util.Set;
 
-import static com.amaterasu.kyo.netty.ServerConstant.NIO_PORT;
+import static com.amaterasu.kyo.nioandnetty.ServerConstant.NIO_PORT;
 
 /**
  * 原生java nio示例

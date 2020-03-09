@@ -1,7 +1,6 @@
-package com.amaterasu.kyo.netty;
+package com.amaterasu.kyo.nioandnetty;
 
 import io.netty.bootstrap.ServerBootstrap;
-import io.netty.channel.socket.nio.NioServerSocketChannel;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
