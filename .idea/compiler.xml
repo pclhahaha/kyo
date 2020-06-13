@@ -6,20 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="javaagent" />
         <module name="springwebflux" />
         <module name="basedemo" />
-        <module name="springreactor" />
         <module name="demo" />
+        <module name="springreactor" />
+        <module name="algorithm" />
+        <module name="javaagent" />
+        <module name="nettydemo" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="algorithm" options="-parameters" />
       <module name="basedemo" options="-parameters" />
       <module name="demo" options="-parameters" />
       <module name="javaagent" options="-parameters" />
       <module name="kyo" options="-parameters" />
+      <module name="nettydemo" options="-parameters" />
       <module name="springdemo" options="-parameters" />
       <module name="springreactor" options="-parameters" />
       <module name="springwebflux" options="-parameters" />

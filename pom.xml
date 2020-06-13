@@ -19,6 +19,8 @@
         <module>demo</module>
         <module>springdemo</module>
         <module>javaagent</module>
+        <module>algorithm</module>
+        <module>nettydemo</module>
     </modules>
     <packaging>pom</packaging>
 
