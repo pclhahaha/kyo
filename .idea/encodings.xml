@@ -3,12 +3,19 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/algorithm" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/algorithm/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javaagent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javaagent/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/nettydemo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nettydemo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springdemo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springdemo/basedemo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springdemo/basedemo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springdemo/springreactor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springdemo/springreactor/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springdemo/springwebflux" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springdemo/springwebflux/src/main/java" charset="UTF-8" />
   </component>
 </project>

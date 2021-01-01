@@ -1,4 +1,4 @@
-package com.amaterasu.kyo.springdemo.server;
+package com.amaterasu.kyo.nettydemo.server;
 
 import io.netty.channel.ChannelInboundHandlerAdapter;
 
